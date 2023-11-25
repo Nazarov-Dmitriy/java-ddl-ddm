@@ -1,4 +1,4 @@
 select *
-from persons
-where age > 27
-order by age desc
+from orders2 o
+join customers c on c.id = o.customer_id
+where c.name = lower('aleXey')

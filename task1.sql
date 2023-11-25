@@ -1,8 +1,8 @@
-create table PERSONS(
+create table CUSTOMERS(
+    id int generated always as identity primary key,
     name varchar(50) not null,
     surname varchar(50) not null,
     age int not null,
-    phone_numbe int not null,
-    city_of_living varchar(50) not null,
-    primary key (name ,surname, age)
+    phone_number VARCHAR(12) not null
 )
+
